@@ -16,7 +16,9 @@ export default function Traininglist() {
 
     const columns = [
         { headerName: 'Activity', field: 'activity', sortable: true, filter: true },
-        { headerName: 'Date', field: 'date', sortable: true, filter: true },
+        { headerName: 'Date', field: 'date',  valueFormatter: (data) => {
+            return data.value ? (new Date(data.value)).toLocaleDateString() : '';
+       }, sortable: true, filter: true },
         { headerName: 'Duration (min)', field: 'duration', sortable: true, filter: true },
  //      { headerName: 'Name', field: 'customer'}
  /*       { headerName: 'Customer', valueGetter(params) { 

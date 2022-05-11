@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 function App() {
   return (
     <div className="App">
-      <AppBar position="static">
+      <AppBar position="static" sx={{ bgcolor: "#c16bd6" }}>
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             PersonalTrainer
