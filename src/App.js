@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Customerlist from './components/Customerlist';
 import Traininglist from './components/Traininglist';
+import MuiDrawer from './components/MuiDrawer';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -16,6 +17,7 @@ function App() {
           </Typography>
         </Toolbar>
       </AppBar>
+      <MuiDrawer />
       <Customerlist />
       <Traininglist />
     </div>
