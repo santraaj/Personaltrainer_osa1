@@ -11,7 +11,12 @@ export default function MuiDrawer() {
 
     return (
         <div> 
-            <IconButton size='large' edge='start' onClick={() => setDrawerOpen(true)}> 
+            <IconButton 
+                size='large' 
+                edge='start' 
+                color='inherit' 
+                onClick={() => setDrawerOpen(true)}
+            > 
                 <MenuIcon />
             </IconButton>
             <Drawer 
@@ -29,5 +34,3 @@ export default function MuiDrawer() {
     )
         
 }
-
-//<IconButton size='large' edge='start' color='inherit'> 
