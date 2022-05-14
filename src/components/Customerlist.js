@@ -26,6 +26,7 @@ export default function Customerlist() {
 
     return (
         <div>
+            <h2>Customers</h2>
             <div className="ag-theme-material"
                 style={{
                     height: '700px', 
